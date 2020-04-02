@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Таня Кондрашина](https://up.htmlacademy.ru/adaptive/19/user/859539).
-* Наставник: `Неизвестно`.
+* Наставник: [none].
 
 ---
 
