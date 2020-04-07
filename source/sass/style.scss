@@ -1,13 +1,17 @@
+$bold: 700;
 $primary-gray: #444444;
 $seafoam-blue: #63d1bb;
 $dark-seafoam: #46c1ae;
 $light-gray: #f1f1f1;
 $lightest-gray: #ececec;
-$mobile-width: 767px;
+$mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1150px;
 $retina-dppx: 1.5dppx;
 $retina-dpi: 144dpi;
 
+@import "mixins.scss";
 @import "fonts.scss";
 @import "scaffolding.scss";
+@import "blocks/container.scss";
+@import "blocks/navigation.scss";

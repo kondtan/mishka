@@ -12,41 +12,41 @@
     <div class="container">
       <header class="page-header">
         <nav class="navigation">
-          <div class="navigation__logo">
-            <a href="index.html" class="navigation__logo-link">
+          <div class="nav-logo logo">
+            <a href="index.html" class="logo__link">
               <picture>
                 <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
-                <img class="navigation__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="«Мишка» - милые штуки ручной работы для дома">
+                <img class="logo__image" src="./img/logo-mobile.svg" width="86" height="35" alt="«Мишка» - милые штуки ручной работы для дома">
               </picture>
             </a>
-            <button class="navigation__toggle" type="button">
+            <button class="navigation__toggle toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
-              <svg class="navigation__burger navigation__burger--open" width="20" height="14">
+              <svg class="toggle__burger toggle__burger--open" width="20" height="14">
                 <!-- <use xlink:href="#icon-menu-open"></use> -->
               </svg>
             </button>
           </div>
-          <ul class="navigation__links visible-menu">
-            <li class="navigation__item navigation__item-catalog navigation__item--active">
+          <ul class="navigation__links visible-menu-js">
+            <li class="navigation__item navigation__item-catalog">
               <a href="catalog.html" class="navigation__item-link">Каталог товаров</a>
             </li>
-            <li class="navigation__item">
+            <li class="navigation__item navigation__item-order">
               <a href="form.html" class="navigation__item-link">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="navigation__search-cart visible-menu">
+          <ul class="navigation__search-cart visible-menu-js">
             <li class="navigation__item navigation__search">
               <a href="#" class="navigation__search-link search navigation__item-link" tabindex="0">
                 <svg class="search__icon" width="18" height="18">
                   <use xlink:href="#icon-search"></use>
                 </svg>
-                <span class="visually-hidden-search">Поиск по сайту</span>
+                <span class="search--visually-hidden">Поиск по сайту</span>
               </a>
             </li>
             <li class="navigation__item navigation__cart">
-              <a class="navigation__cart-link cart-link navigation__item-link" href="cart.html">
-                <svg class="cart-link__icon" width="21" height="18">
+              <a class="navigation__cart-link cart navigation__item-link" href="cart.html">
+                <svg class="cart__icon" width="21" height="18">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
                 <span>Корзина: пока пуста</span>
@@ -65,7 +65,7 @@
         </nav>
       </header>
 
-      <main class="page-main">
+      <!-- <main class="page-main">
         <div class="page-main__header-wrapper">
           <h1 class="page-main__title">Милые штуки ручной работы&nbsp;для дома</h1>
           <section class="main-catalog">
@@ -234,7 +234,7 @@
           </noscript>
           <a class="contact__link" tabindex="0">Напишите нам</a>
         </section>
-      </main>
+      </main> -->
 
       <!-- <footer class="page-footer">
         <div class="page-footer__wrapper">
@@ -330,7 +330,7 @@
 
     </div>
 
-    <!-- <script src="js/script.min.js"></script> -->
+    <script src="js/script.min.js"></script>
 
   </body>
 </html>
