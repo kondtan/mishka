@@ -19,10 +19,28 @@
 
   &--left {
     background-color: $seafoam-blue;
+
+    &:hover,
+    &:focus {
+      background-color: $green-on-action;
+    }
+
+    &:active a {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &--right {
     background-color: $greeny-blue;
+
+    &:hover,
+    &:focus {
+      background-color: $dark-seafoam;
+    }
+
+    &:active a {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
 
@@ -81,6 +99,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-catalog {
+    margin-bottom: 123px;
+  }
+
   .main-catalog__list {
     width: 1050px;
   }

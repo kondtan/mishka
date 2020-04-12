@@ -1,0 +1,236 @@
+.promo__body {
+  margin: 0 30px;
+}
+
+.promo__header {
+  margin-bottom: 23px;
+  padding: 27px 42px 0 29px;
+}
+
+.promo__header-title {
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.promo__type {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: $bold;
+  line-height: 20px;
+  color: $seafoam-blue;
+}
+
+.promo__description {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
+  font-size: 15px;
+  color: $primary-gray;
+  line-height: 24px;
+}
+
+.promo__parameters {
+  margin-bottom: 25px;
+
+  font-size: 15px;
+  line-height: 20px;
+  color: $primary-gray;
+  border-collapse: collapse;
+}
+
+.promo__field,
+.promo__value {
+  padding-bottom: 9px;
+  padding-top: 9px;
+  border-bottom: #ececec solid 1px;
+}
+
+.promo__field {
+  padding-left: 27px;
+}
+
+.promo__picture {
+  width: 260px;
+  height: auto;
+
+  margin: 0;
+}
+
+.promo__price {
+  padding: 20px 0 26px 0;
+
+  text-align: center;
+  font-size: 17px;
+  font-weight: $bold;
+  line-height: 24px;
+  color: $primary-gray;
+}
+
+.promo__order {
+  @include button-style;
+}
+
+@media (min-width: $tablet-width) {
+  .weekly-promo {
+    position: relative;
+    margin-bottom: 128px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 14px;
+      bottom: -68px;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat;
+      background-size: contain;
+    }
+  }
+
+  .promo__body {
+    margin: 0 49px;
+
+    display: block;
+    box-sizing: content-box;
+  }
+
+  .promo__header {
+    padding: 45px 42px 0 46px;
+    margin-bottom: 43px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .promo__header-title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .promo__type {
+    width: 134px;
+
+    padding-right: 5px;
+
+    align-self: center;
+    text-align: center;
+  }
+
+  .promo__description {
+    width: 282px;
+
+    margin-bottom: 38px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .promo__parameters {
+    width: 291px;
+
+    margin-bottom: 58px;
+  }
+
+  .promo__value {
+    padding-right: 10px;
+  }
+
+  .promo__field {
+    padding-left: 0;
+  }
+
+  .promo__price {
+    width: 286px;
+    padding: 0;
+    margin-bottom: 34px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .promo__order {
+    width: 292px;
+  }
+
+  .promo__picture {
+    width: 333px;
+    height: 404px;
+
+    margin-top: 10px;
+    margin-right: 3px;
+
+    float: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .weekly-promo::after {
+    width: 1050px;
+    height: 21px;
+
+    bottom: -95px;
+    left: 50px;
+  }
+
+  .promo__header {
+    width: 682px;
+
+    padding: 0;
+    padding-left: 65px;
+    margin: 0;
+    margin-bottom: 44px;
+
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .promo__header-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .promo__type {
+    line-height: 17px;
+  }
+
+  .promo__body {
+    margin-left: 225px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo__description {
+    margin-bottom: 48px;
+  }
+
+  .promo__parameters {
+    margin-bottom: 110px;
+  }
+
+  .promo__value {
+    padding-top: 10px;
+    padding-right: 2px;
+  }
+
+  .promo__picture {
+    width: 525px;
+    height: 636px;
+
+    margin: 0;
+
+    position: absolute;
+    top: -158px;
+    right: 0;
+    z-index: -1;
+  }
+}
