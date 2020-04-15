@@ -25,6 +25,7 @@
 @media (min-width: $tablet-width) {
   .page-main {
     margin-top: -60px;
+    margin-bottom: 57px;
   }
 
   .page-main__header {
@@ -62,6 +63,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main {
+    margin-bottom: 34px;
+  }
+
   .page-main__header {
     width: 100%;
     height: 472px;
