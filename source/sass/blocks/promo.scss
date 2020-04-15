@@ -1,5 +1,25 @@
+.weekly-promo {
+  margin-bottom: 69px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 14px;
+    bottom: -50px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+}
+
 .promo__body {
   margin: 0 30px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .promo__header {
@@ -29,13 +49,17 @@
   margin-bottom: 15px;
   padding: 0;
 
+  order: -2;
+
   font-size: 15px;
   color: $primary-gray;
   line-height: 24px;
 }
 
 .promo__parameters {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+
+  order: -1;
 
   font-size: 15px;
   line-height: 20px;
@@ -45,13 +69,13 @@
 
 .promo__field,
 .promo__value {
-  padding-bottom: 9px;
+  padding-bottom: 10px;
   padding-top: 9px;
   border-bottom: #ececec solid 1px;
 }
 
 .promo__field {
-  padding-left: 27px;
+  padding-left: 17px;
 }
 
 .promo__picture {
@@ -59,10 +83,14 @@
   height: auto;
 
   margin: 0;
+
+  order: 3;
 }
 
 .promo__price {
   padding: 20px 0 26px 0;
+
+  order: 4;
 
   text-align: center;
   font-size: 17px;
@@ -73,22 +101,18 @@
 
 .promo__order {
   @include button-style;
+  order: 5;
 }
 
 @media (min-width: $tablet-width) {
   .weekly-promo {
     position: relative;
-    margin-bottom: 128px;
+    margin-bottom: 118px;
 
     &::after {
-      position: absolute;
-      content: "";
       width: 100%;
       height: 14px;
       bottom: -68px;
-      background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat: repeat;
-      background-size: contain;
     }
   }
 
@@ -135,7 +159,7 @@
   .promo__parameters {
     width: 291px;
 
-    margin-bottom: 58px;
+    margin-bottom: 55px;
   }
 
   .promo__value {
@@ -171,12 +195,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .weekly-promo::after {
-    width: 1050px;
-    height: 21px;
+  .weekly-promo {
+    margin-bottom: 155px;
 
-    bottom: -95px;
-    left: 50px;
+    &::after {
+      width: 1050px;
+      height: 21px;
+
+      bottom: -95px;
+      left: 50px;
+    }
   }
 
   .promo__header {
@@ -214,7 +242,7 @@
   }
 
   .promo__parameters {
-    margin-bottom: 110px;
+    margin-bottom: 107px;
   }
 
   .promo__value {
