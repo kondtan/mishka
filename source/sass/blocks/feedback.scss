@@ -86,12 +86,16 @@
   @include button-reset;
 
   width: 50%;
-  padding: 10px 0;
+  padding: 11px 0;
   background: 0 0;
   border: 1px solid #ececec;
   cursor: pointer;
 
   &:hover svg {
+    opacity: 0.6;
+  }
+
+  &:active svg {
     opacity: 0.3;
   }
 }
@@ -108,7 +112,7 @@
   .feedback {
     min-height: 457px;
     margin: 0 0 113px;
-    padding: 79px 48px 50px;
+    padding: 79px 51px 48px 50px;
 
     position: relative;
 
@@ -186,7 +190,7 @@
 @media (min-width: $desktop-width) {
   .feedback {
     padding: 70px 0 0 172px;
-    margin: 0 49px 141px;
+    margin: 0 49px 139px;
 
     background-position: 1px 0;
 

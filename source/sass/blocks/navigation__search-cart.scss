@@ -1,0 +1,16 @@
+@media (min-width: $tablet-width) {
+  .navigation__search-cart {
+    width: 400px;
+    height: 88px;
+
+    display: flex;
+    order: 2;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__search-cart {
+    order: 3;
+  }
+}

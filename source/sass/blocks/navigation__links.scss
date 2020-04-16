@@ -1,0 +1,32 @@
+@media (min-width: $tablet-width) {
+  .navigation__links {
+    width: 317px;
+    height: 60px;
+    margin-left: 50px;
+
+    display: flex;
+    order: 3;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    font-size: 15px;
+    color: #000000;
+    line-height: 24px;
+  }
+
+  .navigation__item-catalog,
+  .navigation__item-order {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__links {
+    width: 383px;
+    margin-left: 52px;
+    order: 1;
+
+    font-size: 17px;
+  }
+}

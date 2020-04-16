@@ -1,0 +1,22 @@
+@media (min-width: $tablet-width) {
+  .navigation__free-delivery-info {
+    width: 265px;
+    margin-right: 50px;
+
+    display: flex;
+    order: 4;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+
+    font-size: 15px;
+    color: #000000;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__free-delivery-info {
+    order: 5;
+  }
+}

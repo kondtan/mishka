@@ -21,7 +21,7 @@
 .about__list-item {
   height: auto;
 
-  margin-top: 36px;
+  margin-top: 38px;
   display: flex;
   flex-wrap: wrap;
 
@@ -71,8 +71,7 @@
     letter-spacing: 0.2px;
 
     &__svg {
-      position: relative;
-      padding: 4px 70% 0 7px;
+      // position: relative;
       margin-bottom: 16px;
 
       fill: #63d1bb;
@@ -107,6 +106,7 @@
       .about-item__svg {
         top: -10px;
         left: -7px;
+        margin-bottom: 22px;
       }
     }
 
@@ -126,6 +126,7 @@
 
     &--handmade {
       width: 49%;
+      margin-top: 33px;
       order: -1;
 
       span {
@@ -146,6 +147,7 @@
 
       .about-item__svg {
         left: -14px;
+        margin-bottom: 26px;
       }
     }
 
@@ -161,6 +163,7 @@
       .about-item__svg {
         top: -5px;
         left: -5px;
+        margin-bottom: 20px;
       }
     }
   }
