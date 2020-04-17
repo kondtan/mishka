@@ -1,0 +1,28 @@
+.promo__description {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
+  order: -2;
+
+  font-size: 15px;
+  color: $primary-gray;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__description {
+    width: 282px;
+
+    margin-bottom: 38px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__description {
+    margin-bottom: 48px;
+  }
+}

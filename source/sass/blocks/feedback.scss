@@ -19,95 +19,6 @@
   }
 }
 
-.feedback-review__header {
-  margin: 0;
-  margin-left: 28px;
-  margin-bottom: 25px;
-
-  font-size: 25px;
-  line-height: 30px;
-  color: #000000;
-}
-
-.feedback-review__content {
-  margin: 0;
-  margin-bottom: 27px;
-
-  font-size: 15px;
-  line-height: 30px;
-  color: $primary-gray;
-}
-
-.feedback-review__slider {
-  margin: 0 30px;
-}
-
-.feedback-review__author {
-  margin: 0;
-}
-
-.feedback-review__author-name {
-  display: inline-block;
-  margin-bottom: 3px;
-
-  font-size: 17px;
-  font-weight: $bold;
-  line-height: 24px;
-  color: #000000;
-}
-
-.feedback-review__author-username {
-  font-size: 17px;
-  line-height: 30px;
-  color: $primary-gray;
-
-  &:hover,
-  &:focus {
-    color: $dark-seafoam;
-  }
-
-  &:active {
-    color: rgba(70, 193, 174, 0.3);
-  }
-}
-
-.slider__item {
-  margin: 0;
-  margin-bottom: 29px;
-}
-
-.feedback-review__slider-buttons {
-  margin-bottom: 37px;
-
-  display: flex;
-}
-
-.slider-button {
-  @include button-reset;
-
-  width: 50%;
-  padding: 11px 0;
-  background: 0 0;
-  border: 1px solid #ececec;
-  cursor: pointer;
-
-  &:hover svg {
-    opacity: 0.6;
-  }
-
-  &:active svg {
-    opacity: 0.3;
-  }
-}
-
-.leave-feedback {
-  @include button-style;
-
-  font-size: 18px;
-  padding: 11px 0;
-  margin: 0 30px;
-}
-
 @media (min-width: $tablet-width) {
   .feedback {
     min-height: 457px;
@@ -133,58 +44,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
-  .feedback-review__header {
-    margin: 0;
-    order: 1;
-
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  .feedback-review__content {
-    margin-bottom: 58px;
-
-    font-size: 17px;
-    line-height: 30px;
-  }
-
-  .feedback-review__author {
-    width: 300px;
-    margin: 0;
-
-    order: 4;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .feedback-review__slider {
-    margin: 0;
-    margin-top: 46px;
-
-    order: 3;
-  }
-
-  .feedback-review__slider-buttons {
-    width: 172px;
-
-    margin: 0;
-
-    position: absolute;
-    right: 53px;
-    bottom: 81px;
-  }
-
-  .slider-button {
-    border: none;
-  }
-
-  .leave-feedback {
-    width: 175px;
-    margin: 0;
-
-    order: 2;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -199,31 +58,5 @@
 
       bottom: -86px;
     }
-  }
-
-  .feedback-review__header {
-    font-size: 53px;
-    line-height: 57px;
-  }
-
-  .slider__item {
-    width: 768px;
-
-    margin-left: 4px;
-  }
-
-  .feedback-review__content {
-    margin-bottom: 38px;
-  }
-
-  .feedback-review__slider-buttons {
-    right: 2px;
-    bottom: 97px;
-  }
-
-  .leave-feedback {
-    height: 52px;
-
-    margin-top: 9px;
   }
 }

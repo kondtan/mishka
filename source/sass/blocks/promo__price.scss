@@ -1,0 +1,22 @@
+.promo__price {
+  padding: 20px 0 26px 0;
+
+  order: 4;
+
+  text-align: center;
+  font-size: 17px;
+  font-weight: $bold;
+  line-height: 24px;
+  color: $primary-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__price {
+    width: 286px;
+    padding: 0;
+    margin-bottom: 34px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
