@@ -34,23 +34,23 @@
           </div>
           <ul class="navigation__links visible-menu-js">
             <li class="navigation__item navigation__item-catalog">
-              <a href="catalog.html" class="navigation__item-link">Каталог товаров</a>
+              <a href="catalog.html" class="navigation__link">Каталог товаров</a>
             </li>
             <li class="navigation__item navigation__item-order">
-              <a href="form.html" class="navigation__item-link">Вязание на заказ</a>
+              <a href="form.html" class="navigation__link">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="navigation__search-cart visible-menu-js">
+          <ul class="navigation__search-cart search-cart visible-menu-js">
             <li class="navigation__item navigation__search">
-              <a href="#" class="navigation__search-link search navigation__item-link" tabindex="0">
+              <a href="#" class="navigation__search-link search navigation__link" tabindex="0">
                 <svg class="search__icon" width="18" height="18">
                   <use xlink:href="#icon-search"></use>
                 </svg>
-                <span class="search__visually-hidden">Поиск по сайту</span>
+                <span class="search__text">Поиск по сайту</span>
               </a>
             </li>
             <li class="navigation__item navigation__cart">
-              <a class="navigation__cart-link cart navigation__item-link" href="cart.html">
+              <a class="navigation__cart-link cart navigation__link" href="cart.html">
                 <svg class="cart__icon" width="21" height="18">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
@@ -58,13 +58,13 @@
               </a>
             </li>
           </ul>
-          <div class="navigation__free-delivery-info">Бесплатная доставка по России</div>
-          <ul class="navigation__optional">
-            <li class="navigation__optional-item">
-              <a href="#" class="navigation__optional-item__link">Новые поступления</a>
+          <p class="navigation__text">Бесплатная доставка по России</p>
+          <ul class="navigation-optional">
+            <li class="navigation-optional__item">
+              <a href="#" class="navigation-optional__link">Новые поступления</a>
             </li>
-            <li class="navigation__optional-item">
-              <a href="#" class="navigation__optional-item__link">Распродажа</a>
+            <li class="navigation-optional__item">
+              <a href="#" class="navigation-optional__link">Распродажа</a>
             </li>
           </ul>
         </nav>
@@ -79,8 +79,8 @@
           <h2 class="visually-hidden">Товары</h2>
           <ul class="main-catalog__list section-list">
             <li class="section-list__item section-list__item--left">
-              <a class="section-list__item-link" href="#">
-                <span class="section-list__item-text">
+              <a class="section-list__link" href="#">
+                <span class="section-list__text">
                   Предметы интерьера
                 </span>
                 <svg class="section-list__icon interior-icon" fill="#149080" width="40" height="62">
@@ -89,8 +89,8 @@
               </a>
             </li>
             <li class="section-list__item section-list__item--right">
-              <a class="section-list__item-link" href="#">
-                <span class="section-list__item-text">
+              <a class="section-list__link" href="#">
+                <span class="section-list__text">
                   Детские игрушки
                 </span>
                 <svg class="section-list__icon toys-icon" fill="#149080" width="60" height="60">
@@ -100,7 +100,7 @@
             </li>
           </ul>
         </section>
-        <section class="weekly-promo promo">
+        <section class="promo">
           <header class="promo__header">
             <h2 class="promo__header-title">Вязаные корзинки</h2>
             <div class="promo__type">Товар недели</div>
@@ -143,7 +143,7 @@
               </tr>
             </table>
             <div class="promo__price">Цена: 990 руб.</div>
-            <a class="promo__order" href="#">Заказать</a>
+            <a class="promo__order button" href="#">Заказать</a>
           </div>
         </section>
         <section class="about">
@@ -206,7 +206,7 @@
                 </button>
               </div>
             </div>
-            <a class="leave-feedback" href="#">Написать</a>
+            <a class="leave-feedback button" href="#">Написать</a>
           </div>
         </section>
         <section class="contact">
@@ -238,7 +238,7 @@
               </picture>
             </div>
           </noscript>
-          <a class="contact__link" tabindex="0">Напишите нам</a>
+          <a class="contact__link button" tabindex="0">Напишите нам</a>
         </section>
       </main>
 

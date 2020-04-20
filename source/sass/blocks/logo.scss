@@ -1,4 +1,4 @@
-.nav-logo {
+.logo {
   width: 100%;
   height: 79px;
 
@@ -27,14 +27,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .nav-logo {
+  .logo {
     width: 213px;
     height: 82px;
-    margin-top: 6px;
-    margin-left: 48px;
 
     justify-content: unset;
-    order: 1;
   }
 
   .logo__image {
@@ -52,11 +49,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .nav-logo {
+  .logo {
     width: 185px;
-
-    margin-left: 0;
-    order: 2;
   }
 
   .logo__image {

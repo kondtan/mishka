@@ -18,30 +18,3 @@
   margin: -1px;
   overflow: hidden;
 }
-
-@mixin button-style {
-  width: 259px;
-  min-height: 52px;
-
-  padding: 13px 0;
-  display: inline-block;
-  box-sizing: border-box;
-
-  border: 2px solid $primary-gray;
-  background-color: #ffffff;
-  font-weight: $bold;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $primary-gray;
-
-  &:hover,
-  &:focus {
-    color: #ffffff;
-    background-color: $primary-gray;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
-}

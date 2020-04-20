@@ -2,6 +2,10 @@
   margin-top: auto;
 }
 
+.main-catalog__list {
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .main-catalog {
     width: 100%;

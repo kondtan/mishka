@@ -1,22 +1,19 @@
 @media (min-width: $desktop-width) {
-  .navigation__optional {
-    z-index: 1;
+  .navigation-optional {
     min-height: 60px;
-    margin-left: 50px;
 
     display: flex;
     flex-wrap: wrap;
-    order: 4;
     align-items: center;
 
     font-size: 15px;
   }
 
-  .navigation__optional-item {
+  .navigation-optional__item {
     margin-right: 59px;
   }
 
-  .navigation__optional-item__link {
+  .navigation-optional__link {
     color: #000000;
     line-height: 24px;
 
