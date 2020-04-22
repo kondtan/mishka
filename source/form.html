@@ -134,204 +134,199 @@
     <div class="container">
 
       <header class="page-header">
-        <nav class="page-header__main-nav main-nav">
-          <div class="main-nav__logo-menu">
-            <a href="index.html" class="main-nav__logo">
+        <nav class="navigation">
+          <div class="nav-logo logo">
+            <a href="index.html" class="logo__link">
               <picture>
                 <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
-                <img class="main-nav__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="«Мишка» - милые штуки ручной работы для дома">
+                <img class="logo__image" src="./img/logo-mobile.svg" width="86" height="35" alt="«Мишка» - милые штуки ручной работы для дома">
               </picture>
             </a>
-            <button class="main-nav__toggle" type="button">
+            <button class="navigation__toggle toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
-              <svg class="main-nav__toggle--open" width="20" height="14">
+              <svg class="toggle__burger toggle__burger--open" width="20" height="14">
                 <use xlink:href="#icon-menu-open"></use>
               </svg>
             </button>
           </div>
-          <ul class="main-nav__info-links visible-menu">
-            <li class="main-nav__item main-nav__item-catalog main-nav__item--active">
-              <a href="catalog.html" class="main-nav__item-link main-nav__item-link">Каталог товаров</a>
+          <ul class="navigation__links visible-menu-js">
+            <li class="navigation__item navigation__item-catalog">
+              <a href="catalog.html" class="navigation__link">Каталог товаров</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__item-link main-nav__item-link">Вязание на заказ</a>
+            <li class="navigation__item navigation__item-order">
+              <a href="form.html" class="navigation__link">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="main-nav__search-cart visible-menu">
-            <li class="main-nav__item main-nav__search">
-              <a href="#" class="main-nav__search-link search main-nav__item-link" tabindex="0">
+          <ul class="navigation__search-cart search-cart visible-menu-js">
+            <li class="navigation__item navigation__search">
+              <a href="#" class="navigation__search-link search navigation__link" tabindex="0">
                 <svg class="search__icon" width="18" height="18">
                   <use xlink:href="#icon-search"></use>
                 </svg>
-                <span class="visually-hidden-search">Поиск по сайту</span>
+                <span class="search__text">Поиск по сайту</span>
               </a>
             </li>
-            <li class="main-nav__item main-nav__cart">
-              <a class="main-nav__cart-link cart-link main-nav__item-link" href="cart.html">
-                <svg class="cart-link__icon" width="20" height="19">
+            <li class="navigation__item navigation__cart">
+              <a class="navigation__cart-link cart navigation__link" href="cart.html">
+                <svg class="cart__icon" width="21" height="18">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
                 <span>Корзина: пока пуста</span>
               </a>
             </li>
           </ul>
-          <div class="main-nav__free-delivery-info">Бесплатная доставка по России</div>
-          <ul class="main-nav__new__sale">
-            <li class="main-nav__new__sale-item">
-              <a href="#" class="main-nav__item-link">Новые поступления</a>
+          <p class="navigation__text">Бесплатная доставка по России</p>
+          <ul class="navigation-optional">
+            <li class="navigation-optional__item">
+              <a href="#" class="navigation-optional__link">Новые поступления</a>
             </li>
-            <li class="main-nav__new__sale-item">
-              <a href="#" class="main-nav__item-link">Распродажа</a>
+            <li class="navigation-optional__item">
+              <a href="#" class="navigation-optional__link">Распродажа</a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <main class="page-main form-main">
-        <h1 class="visually-hidden">«Мишка» - милые штуки ручной работы для дома</h1>
-        <div class="page-title page-title__form">
-          <h2 class="page-title__header page-title__header-form">Вязание на заказ</h2>
+      <main class="form-main">
+        <div class="form-main__wrapper">
+          <h1 class="form-main__title">Вязание на заказ</h1>
         </div>
-        <div class="form-main__wrapper form-page">
-        <p class="form-page__about">
-          Мы будем рады воплотить в жизнь ваши&nbsp;пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы&nbsp;уточнить детали.
-        </p>
-        <form class="form-order" action="https://echo.htmlacademy.ru">
-          <div class="form-order__product-type product-type form-order__fieldset">
-            <div class="product-type__title form-order__title">
-              Тип
-            </div>
-            <ul class="product-type__list form-order__list">
-              <li class="product-type__list-item">
-                <label class="product-type__radio">
-                  <input class="product-type__radio-input radio" type="radio" name="product-type" value="interior-accessory">
-                  <span class="radio-button product-type__radio-button"></span>
-                  <span class="product-type__value">Аксессуар для интерьера</span>
-                </label>
-              </li>
-              <li class="product-type__list-item">
-                <label class="product-type__radio">
-                    <input class="product-type__radio-input radio" type="radio" name="product-type" value="interior-accessory">
-                    <span class="radio-button product-type__radio-button"></span>
-                    <span class="product-type__value">Детская игрушка</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-          <div class="form-order__product-color product-color form-order__fieldset">
-            <div class="product-color__content">
-              <h3 class="product-color__title form-order__title visually-hidden">Цвет</h3>
-              <div class="product-color__title form-order__title">Цвет</div>
-              <ul class="product-color__list form-order__list">
-                <li class="product-color__list-item">
-                  <label class="product-color__check">
-                    <input class="product-color__check-input check" name="white" type="checkbox" checked="">
-                    <span class="check-box"></span>
-                    <span class="product-color__value">Белый</span>
+        <div class="order">
+          <h2 class="visually-hidden">Форма заказа</h2>
+          <p class="order__text">
+            Мы будем рады воплотить в жизнь ваши&nbsp;пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы&nbsp;уточнить детали.
+          </p>
+          <form class="order__form form-order" action="https://echo.htmlacademy.ru">
+            <div class="form-order__group form-order__group--product-type">
+              <h3 class="form-order__title form-order__title--product-type">
+                Тип
+              </h3>
+              <ul class="form-order__list form-order__list--product-type">
+                <li class="form-order__item form-order__item--product-type">
+                  <label class="form-order__label form-order__label--product-type">
+                    <input class="form-order__input form-order__input--product-type visually-hidden" type="radio" name="product-type" value="interior-accessory">
+                    <span class="form-order__radio"></span>
+                    <span class="form-order__value form-order__value--product-type">Аксессуар для интерьера</span>
                   </label>
                 </li>
-                <li class="product-color__list-item">
-                  <label class="product-color__check">
-                    <input class="product-color__check-input check" name="gray" type="checkbox" checked="">
-                    <span class="check-box"></span>
-                    <span class="product-color__value">Серый</span>
-                  </label>
-                </li>
-                <li class="product-color__list-item">
-                  <label class="product-color__check">
-                    <input class="product-color__check-input check" name="tiffani" type="checkbox">
-                    <span class="check-box"></span>
-                    <span class="product-color__value">«Тиффани»</span>
-                  </label>
-                </li>
-                <li class="product-color__list-item">
-                  <label class="product-color__check">
-                    <input class="product-color__check-input check" name="black" type="checkbox">
-                    <span class="check-box"></span>
-                    <span class="product-color__value">Черный</span>
-                  </label>
-                </li>
-                <li class="product-color__list-item">
-                  <label class="product-color__check">
-                    <input class="product-color__check-input check" name="pink" type="checkbox">
-                    <span class="check-box"></span>
-                    <span class="product-color__value">Розовый</span>
-                  </label>
-                </li>
-                <li class="product-color__list-item">
-                  <label class="product-color__check">
-                    <input class="product-color__check-input check" name="orange" type="checkbox">
-                    <span class="check-box"></span>
-                    <span class="product-color__value">Оранжевый</span>
+                <li class="form-order__item form-order__item--product-type">
+                  <label class="form-order__label form-order__label--product-type">
+                      <input class="form-order__input form-order__input--product-type visually-hidden" type="radio" name="product-type" value="interior-accessory">
+                      <span class="form-order__radio"></span>
+                      <span class="form-order__value form-order__value--product-type">Детская игрушка</span>
                   </label>
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="form-order__customer-name order-name-field form-order__fieldset">
-            <div class="order-name-field__title form-order__title">ФИО</div>
-            <ul class="order-name-field__list">
-              <li class="order-name-field__list-item">
-                <label class="order-name-field__value" for="name-submission">Имя:</label>
-                <input class="order-name-submission name-submission" id="name-submission" type="text" name="name" placeholder="Введите ваше имя*" required="">
-              </li>
-              <li class="order-name-field__list-item ">
-                <label class="order-name-field__value" for="surname-submission">Фамилия:</label>
-                <input class="order-name-submission surname-submission" id="surname-submission" type="text" name="surname" placeholder="Укажите фамилию*">
-              </li>
-              <li class="order-name-field__list-item ">
-                <label class="order-name-field__value" for="patronymic-submission">Отчество:</label>
-                <input class="order-name-submission patronymic-submission" id="patronymic-submission" type="text" name="patronymic" placeholder="Отчество, если желаете">
-              </li>
-            </ul>
-          </div>
-            <div class="form-order__contact-container">
-              <div class="form-order__contact-wrapper">
-                <div class="form-order__fieldset form-order__customer-phone order-phone-field form-order__contact">
-                  <div class="order-phone-field__title form-order__title">Тел</div>
-                  <div class="order-phone-field__wrapper submission">
-                    <label class="visually-hidden" for="submission-phone">Введите номер телефона</label>
-                    <input class="submission-phone submission__contact" id="submission-phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="(\+?\d[- .]*){7,13}" required="">
-                    <svg class="submission__phone-icon" width="25" height="25">
-                      <use xlink:href="#icon-phone"></use>
-                    </svg>
-                  </div>
+            <div class="form-order__group form-order__group--product-color">
+              <h3 class="form-order__title form-order__title--product-color">Цвет</h3>
+              <ul class="form-order__list form-order__list--product-color">
+                <li class="form-order__item form-order__item--product-color">
+                  <label class="form-order__label form-order__label--checkbox">
+                    <input class="form-order__input form-order__input--product-color visually-hidden" name="white" type="checkbox" checked="">
+                    <span class="form-order__checkbox form-order__checkbox--product-color"></span>
+                    <span class="form-order__value form-order__value--checkbox">Белый</span>
+                  </label>
+                </li>
+                <li class="form-order__item form-order__item--product-color">
+                  <label class="form-order__label form-order__label--checkbox">
+                    <input class="form-order__input form-order__input--product-color visually-hidden" name="gray" type="checkbox" checked="">
+                    <span class="form-order__checkbox form-order__checkbox--product-color"></span>
+                    <span class="form-order__value form-order__value--checkbox">Серый</span>
+                  </label>
+                </li>
+                <li class="form-order__item form-order__item--product-color">
+                  <label class="form-order__label form-order__label--checkbox">
+                    <input class="form-order__input form-order__input--product-color visually-hidden" name="tiffani" type="checkbox">
+                    <span class="form-order__checkbox form-order__checkbox--product-color"></span>
+                    <span class="form-order__value form-order__value--checkbox">«Тиффани»</span>
+                  </label>
+                </li>
+                <li class="form-order__item form-order__item--product-color">
+                  <label class="form-order__label form-order__label--checkbox">
+                    <input class="form-order__input form-order__input--product-color visually-hidden" name="black" type="checkbox">
+                    <span class="form-order__checkbox form-order__checkbox--product-color"></span>
+                    <span class="form-order__value form-order__value--checkbox">Черный</span>
+                  </label>
+                </li>
+                <li class="form-order__item form-order__item--product-color">
+                  <label class="form-order__label form-order__label--checkbox">
+                    <input class="form-order__input form-order__input--product-color visually-hidden" name="pink" type="checkbox">
+                    <span class="form-order__checkbox form-order__checkbox--product-color"></span>
+                    <span class="form-order__value form-order__value--checkbox">Розовый</span>
+                  </label>
+                </li>
+                <li class="form-order__item form-order__item--product-color">
+                  <label class="form-order__label form-order__label--checkbox">
+                    <input class="form-order__input form-order__input--product-color visually-hidden" name="orange" type="checkbox">
+                    <span class="form-order__checkbox form-order__checkbox--product-color"></span>
+                    <span class="form-order__value form-order__value--checkbox">Оранжевый</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="form-order__group form-order__group--customer-name">
+              <h3 class="form-order__title form-order__title--customer-name">ФИО</h3>
+              <ul class="form-order__list form-order__list--customer-name">
+                <li class="form-order__item form-order__item--customer-name">
+                  <label class="form-order__value form-order__value--name" for="name-field">Имя:</label>
+                  <input class="form-order__input form-order__input--name" id="name-field" type="text" name="name" placeholder="Введите ваше имя*" required="">
+                </li>
+                <li class="form-order__item form-order__item--customer-name">
+                  <label class="form-order__value form-order__value--surname" for="surname-field">Фамилия:</label>
+                  <input class="form-order__input form-order__input--surname" id="surname-field" type="text" name="surname" placeholder="Укажите фамилию*">
+                </li>
+                <li class="form-order__item form-order__item--customer-name">
+                  <label class="form-order__value form-order__value--patronymic" for="patronymic-field">Отчество:</label>
+                  <input class="form-order__input form-order__input--patronymic" id="patronymic-field" type="text" name="patronymic" placeholder="Отчество, если желаете">
+                </li>
+              </ul>
+            </div>
+            <div class="form-order__group form-order__group--contact">
+              <div class="form-order__wrapper">
+                <h3 class="form-order__title form-order__title--phone">Тел</h3>
+                <div class="form-order__item form-order__item--contact">
+                  <label class="form-order__label visually-hidden" for="phone-field">Введите номер телефона</label>
+                  <input class="form-order__input form-order__input--phone" id="phone-field" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="(\+?\d[- .]*){7,13}" required="">
+                  <svg class="form-order__icon form-order__icon--phone" width="25" height="25">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
                 </div>
-                <div class="form-order__fieldset form-order__customer-email order-email-field form-order__contact">
-                  <div class="order-email-field__title form-order__title">E-mail</div>
-                  <div class="order-email-field__wrapper submission">
-                    <label class="visually-hidden" for="submission-email">Введите email</label>
-                    <input class="submission-email submission__contact" id="submission-email" type="email" name="email" placeholder="Ваш Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="">
-                    <svg class="submission__email-icon" width="32" height="32">
-                      <use xlink:href="#icon-mail"></use>
-                    </svg>
-                  </div>
+              </div>
+              <div class="form-order__wrapper">
+                <h3 class="form-order__title form-order__title--email">E-mail</h3>
+                <div class="form-order__item form-order__item--contact">
+                  <label class="form-order__label visually-hidden" for="email-field">Введите email</label>
+                  <input class="form-order__input form-order__input--email" id="email-field" type="email" name="email" placeholder="Ваш Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="">
+                  <svg class="form-order__icon form-order__icon--email" width="32" height="32">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
                 </div>
               </div>
             </div>
-          <div class="form-order__fieldset customer-wishes">
-            <div class="customer-wishes__title form-order__title">Доп</div>
-            <div class="customer-wishes__wrapper submission">
-              <label class="visually-hidden" for="submission-wishes">Опишите все ваши пожелания к заказу</label>
-              <textarea class="submission-wishes" id="submission-wishes" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="form-order__group form-order__group--customer-wishes">
+              <h3 class="form-order__title form-order__title--customer-wishes">Доп</h3>
+              <div class="form-order__item form-order__item--textarea">
+                <label class="form-order__label visually-hidden" for="wishes">Опишите все ваши пожелания к заказу</label>
+                <textarea class="form-order__textarea" id="wishes" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
             </div>
-          </div>
-          <div class="form-order__footer">
-            <small class="form-order__footnote">
-              *Поля обязательны для заполнения
-            </small>
-            <button class="form-order__submit" type="submit">Отправить заказ</button>
-          </div>
-        </form>
-      </div>
+            <div class="form-order__submit">
+              <small class="form-order__footnote">
+                *Поля обязательны для заполнения
+              </small>
+              <button class="form-order__submit-button button" type="submit">Отправить заказ</button>
+            </div>
+          </form>
+        </div>
       </main>
 
       <footer class="page-footer">
         <div class="page-footer__wrapper">
-          <div class="page-footer__logo-wrapper">
-            <a class="page-footer__logo-link" href="index.html">
-              <svg class="page-footer__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="102" height="34" viewBox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056" xml:space="preserve">
+          <div class="page-footer__logo">
+            <a class="page-footer__logo-link" href="#">
+              <svg class="page-footer__logo-picture" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="102" height="34" viewBox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056" xml:space="preserve">
                 <g class="page-footer__logo-path">
                   <path d="M19.135,21.495c-0.083-2.683-0.51-5.347-0.475-8.035c0.028-2.174,0.389-4.41-0.36-6.495 c0.047-0.237,0.096-0.473,0.14-0.711c0.193-1.045-3.271-0.492-3.813,0.464c-0.343,0.28-0.519,0.615-0.375,0.957 c0.037,0.086,0.069,0.174,0.102,0.261c-0.656,3.204-1.57,6.306-2.621,9.412c-0.402,1.188-0.888,2.349-1.298,3.533 c-0.582-1.104-1.169-2.194-1.643-3.377C7.418,14.071,6.18,10.602,4.505,7.298C4.695,5.77,1.301,5.93,0.632,7.33 c-0.809,1.694-0.705,3.403-0.438,5.214c0.3,2.042,0.353,4.05,0.377,6.111c0.047,3.976,0.358,7.943,0.417,11.919 c-0.354,0.395-0.461,0.881-0.091,1.375c0.162,0.216,0.361,0.382,0.571,0.549c0.904,0.724,3.5,0.107,3.496-1.271 c-0.014-4.123-0.312-8.238-0.42-12.358c-0.011-0.404-0.018-0.807-0.024-1.21c0.057,0.145,0.114,0.29,0.171,0.434 c0.64,1.604,1.31,3.163,2.185,4.654c0.868,1.478,1.303,3.064,1.803,4.677c-0.189,0.217-0.303,0.462-0.233,0.708 c-0.039,0.18,0.07,0.292,0.251,0.36c0.639,0.548,1.841,0.274,2.509-0.007c0.287-0.121,0.561-0.261,0.826-0.424 c0.345-0.212,0.883-0.679,0.729-1.159c-0.03-0.093-0.058-0.186-0.087-0.279c0.47-1.27,0.709-2.589,0.965-3.93 c0.272-1.428,0.782-2.78,1.295-4.133c0.052,0.619,0.106,1.238,0.156,1.855c0.204,2.554,0.033,5.072,0.007,7.626 c-0.008,0.847,0.054,1.633,0.219,2.461c0.068,0.343,0.367,1.808,0.281,1.887c-0.611,0.564-0.433,1.257,0.385,1.437 c0.915,0.201,2.081-0.105,2.77-0.742c1.198-1.106,0.632-2.845,0.361-4.241C18.661,26.501,19.208,23.879,19.135,21.495z"></path>
                   <path d="M27.499,22.17c-0.074-1.988-0.765-3.862-0.774-5.872c-0.011-2.305,0.181-4.593-0.155-6.886 c-0.106-0.725-4.056,0.1-3.917,1.05c0.309,2.11,0.197,4.229,0.159,6.354c-0.037,2.044,0.468,3.898,0.73,5.904 c0.269,2.054-0.084,4.157,0.149,6.213c0.109,0.962,0.75,2.743,0.089,3.58c-0.42,0.532,1.469,0.342,1.553,0.326 c0.769-0.142,1.793-0.392,2.304-1.038c0.653-0.828,0.196-2.426,0.053-3.357C27.374,26.385,27.576,24.249,27.499,22.17z"></path>
@@ -348,7 +343,7 @@
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-                  <svg class="social__svg" width="22" height="22">
+                  <svg class="social__svg" width="22" height="21">
                     <use xlink:href="#icon-insta"></use>
                   </svg>
                 <span class="visually-hidden">Мишка в Инстаграме</span>
@@ -372,14 +367,14 @@
               </li>
             </ul>
           </div>
-            <div class="page-footer__copyright copyright-wrapper copyright">
+          <div class="page-footer__copyright copyright copyright-wrapper">
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyright__text">Разработано</span>
                 <svg class="copyright__link-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="34" fill="#63d1bb" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
                   <path class="copyright__link-logo-path" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"></path>
                 </svg>
               </a>
-            </div>
+          </div>
         </div>
       </footer>
 
