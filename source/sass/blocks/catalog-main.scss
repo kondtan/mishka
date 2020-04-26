@@ -1,0 +1,19 @@
+.catalog-main__header {
+  width: auto;
+  min-height: 137px;
+
+  padding: 20px 10px;
+  margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+  background-color: $lightest-gray;
+}
+
+.catalog-main__title {
+  margin: 0;
+  font-size: 27px;
+}
