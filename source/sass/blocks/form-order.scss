@@ -539,3 +539,87 @@
     font-size: 17px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-order__wrapper {
+    padding-left: 114px;
+
+    &--contact {
+      padding-right: 225px;
+      padding-left: 112px;
+    }
+  }
+
+  .form-order__group {
+    &--customer-name {
+      padding-top: 46px;
+    }
+  }
+
+  .form-order__list {
+    &--product-type {
+      margin-left: 154px;
+    }
+
+    &--product-color {
+      width: 800px;
+      margin-bottom: 18px;
+      margin-left: 67px;
+    }
+
+    &--customer-name {
+      margin-left: 70px;
+    }
+  }
+
+  .form-order__item {
+    &--product-color {
+      width: 263px;
+    }
+
+    &--contact {
+      width: 700px;
+    }
+
+    &--textarea {
+      margin-bottom: 35px;
+      margin-left: 71px;
+    }
+  }
+
+  .form-order__input {
+    &--name {
+      width: 609px;
+    }
+
+    &--surname,
+    &--patronymic {
+      width: 558px;
+    }
+
+    &--email,
+    &--phone {
+      width: 684px;
+    }
+  }
+
+  .form-order__icon {
+    &--phone {
+      right: 8px;
+    }
+
+    &--email {
+      right: 4px;
+    }
+  }
+
+  .form-order__textarea {
+    width: 668px;
+  }
+
+  .form-order__submit {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
