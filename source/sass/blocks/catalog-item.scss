@@ -62,3 +62,46 @@
 .catalog-item__icon {
   opacity: 0.2;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    width: 100%;
+    margin-bottom: 54px;
+
+    display: flex;
+  }
+
+  .catalog-item__link {
+    font-size: 20px;
+  }
+
+  .catalog-item__image {
+    min-width: 334px;
+    height: 334px;
+  }
+
+  .catalog-item__info {
+    width: 100%;
+
+    padding-top: 25px;
+    padding-left: 25px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-item__value {
+    margin-bottom: auto;
+
+    font-size: 15px;
+  }
+
+  .catalog-item__order {
+    padding-right: 4px;
+    padding-left: 5px;
+  }
+
+  .catalog-item__price {
+    font-size: 17px;
+  }
+}

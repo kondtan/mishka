@@ -52,3 +52,53 @@
   padding: 13px 15px;
   font-size: 17px;
 }
+
+@media (min-width: $tablet-width) {
+  .production {
+    padding: 0 50px 0 51px;
+  }
+
+  .production__wrapper {
+    width: 668px;
+    max-width: none;
+
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .production__video {
+    order: -1;
+  }
+
+  .production__title {
+    padding-top: 37px;
+    padding-left: 105px;
+    padding-right: 30px;
+
+    font-size: 20px;
+
+    &::after {
+      top: 32px;
+      left: 41px;
+    }
+  }
+
+  .production__info {
+    padding-left: 39px;
+    padding-right: 42px;
+    padding-top: 8px;
+    padding-bottom: 44px;
+
+    border: solid 1px $lightest-gray;
+    border-top: none;
+  }
+
+  .production__text {
+    margin-bottom: 34px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
