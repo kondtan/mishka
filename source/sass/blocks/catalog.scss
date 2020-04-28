@@ -17,5 +17,21 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-// }
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding: 0 51px 0 49px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    margin-right: 51px;
+  }
+
+  .catalog__item:nth-child(3n) {
+    margin-right: 0;
+  }
+}

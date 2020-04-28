@@ -1,3 +1,44 @@
+var promo__order = document.querySelector(".promo__order");
+var popup__order = document.querySelector(".modal-order");
+var catalog__order = document.querySelectorAll(".catalog-item__button");
+
+if (promo__order) {
+  promo__order.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup__order.classList.add("modal--show");
+  });
+
+  //слушаем ESC
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (popup__order.classList.contains("modal--show")) {
+        evt.preventDefault();
+        popup__order.classList.remove("modal--show");
+      }
+    }
+  });
+}
+
+if (catalog__order) {
+  catalog__order.forEach(function(element) {
+    element.addEventListener("click",
+    function (evt) {
+      evt.preventDefault();
+      popup__order.classList.add("modal--show");
+    });
+
+  //слушаем ESC
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        if (popup__order.classList.contains("modal--show")) {
+          evt.preventDefault();
+          popup__order.classList.remove("modal--show");
+        }
+      }
+    });
+  })
+}
+
 var navigationToggle = document.querySelector('.navigation__toggle');
 var visibleMenu = document.querySelectorAll('.visible-menu-js');
 

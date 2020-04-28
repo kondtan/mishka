@@ -47,9 +47,10 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .video {
-//     width: 682px;
-//     height: 455px;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .video,
+  .video__image {
+    width: 682px;
+    height: 455px;
+  }
+}

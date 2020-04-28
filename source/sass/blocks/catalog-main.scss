@@ -52,9 +52,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form-main__wrapper {
-    padding-bottom: 119px;
-    margin-bottom: 106px;
+  .catalog-main__wrapper {
+    padding-top: 55px;
+    padding-bottom: 78px;
+    margin-bottom: 113px;
 
     &::after {
       height: 34px;
@@ -63,7 +64,7 @@
     }
   }
 
-  .form-main__title {
+  .catalog-main__title {
     font-size: 53px;
     line-height: 57px;
   }
