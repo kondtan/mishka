@@ -305,15 +305,6 @@
     width: 100%;
   }
 
-  .form-order__wrapper {
-    width: 694px;
-    margin: 0 auto;
-
-    &--contact {
-      width: 668px;
-    }
-  }
-
   .form-order__group {
     padding-top: 51px;
     padding-bottom: 8px;
@@ -344,6 +335,9 @@
   }
 
   .form-order__wrapper {
+    width: 694px;
+
+    margin: 0 auto;
     padding: 0 50px;
     padding-right: 20px;
 
@@ -351,6 +345,8 @@
     align-items: flex-start;
 
     &--contact {
+      width: 668px;
+
       padding-right: 50px;
       justify-content: space-between;
     }
