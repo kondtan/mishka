@@ -1,8 +1,7 @@
 .catalog-main__wrapper {
-  width: auto;
-  min-height: 137px;
+  width: 100%;
 
-  padding: 20px 10px;
+  padding: 67px 0 73px;
   margin-bottom: 30px;
 
   display: flex;
@@ -53,8 +52,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog-main__wrapper {
-    padding-top: 55px;
-    padding-bottom: 78px;
+    padding-top: 95px;
+    padding-bottom: 119px;
     margin-bottom: 113px;
 
     &::after {

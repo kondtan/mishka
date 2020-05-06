@@ -6,8 +6,9 @@
 }
 
 .section-list__item {
-  min-height: 103px;
-  padding: 0 29px;
+  min-height: 62px;
+
+  padding: 23px 28px 18px 28px;
 
   display: flex;
   justify-content: center;
@@ -26,6 +27,9 @@
   }
 
   &--right {
+    padding-top: 20px;
+    padding-bottom: 21px;
+
     background-color: $greeny-blue;
 
     &:hover,
@@ -76,7 +80,7 @@
 .interior-icon {
   width: 40px;
   height: 62px;
-  padding: 6px 9px 0 0;
+  padding: 0 9px 0 0;
 
   align-self: center;
   opacity: 0.5;
@@ -105,9 +109,9 @@
 
 .section-list__text {
   width: 111px;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
 
-  display: inline-flex;
+  // display: inline-flex;
 }
 
 @media (min-width: $tablet-width) {
@@ -135,6 +139,10 @@
   .section-list__text {
     padding: 0;
     line-height: 29px;
+  }
+
+  .interior-icon {
+    padding: 0;
   }
 }
 

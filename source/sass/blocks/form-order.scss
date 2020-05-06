@@ -68,14 +68,15 @@
 }
 
 .form-order__item {
-  margin-bottom: 30px;
-
   &:hover .form-order__icon {
     fill: $seafoam-blue;
   }
 
   &--product-type {
     margin-bottom: 24px;
+
+    display: flex;
+    align-items: center;
   }
 
   &--product-color {
@@ -85,7 +86,7 @@
     align-items: center;
 
     &:last-child {
-      margin-bottom: 39px;
+      margin-bottom: 31px;
     }
   }
 
@@ -119,7 +120,7 @@
   position: relative;
 
   &::before {
-    display: inline-flex;
+    display: block;
     position: absolute;
     top: -8px;
 

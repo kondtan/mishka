@@ -19,7 +19,6 @@
 
 .modal-order__wrapper {
   min-width: 320px;
-  width: 72%;
   height: 336px;
 
   margin: auto;
@@ -47,7 +46,7 @@
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 30px;
 }
 
 .modal-order__directions {
@@ -57,7 +56,7 @@
   justify-content: center;
 
   font-size: 15px;
-  line-height: 2;
+  line-height: 30px;
 }
 
 .modal-order__sizes {
@@ -80,7 +79,7 @@
   color: $primary-gray;
   font-size: 17px;
   font-weight: 700;
-  line-height: 0.94;
+  line-height: 17px;
 }
 
 .modal-order__size {
@@ -128,7 +127,7 @@
 
   font-size: 17px;
   font-weight: 700;
-  line-height: 0.94;
+  line-height: 17px;
   text-transform: uppercase;
   color: #ffffff;
 
@@ -143,22 +142,22 @@
   }
 
   .modal-order__form {
-    padding: 0 19%;
+    padding: 0 106px;
   }
 
   .modal-order__message {
     margin-top: 34px;
     margin-bottom: 14px;
 
-    font-size: 29px;
-    line-height: 1.9;
+    font-size: 30px;
+    line-height: 57px;
   }
 
   .modal-order__directions {
     margin-bottom: 22px;
 
     font-size: 17px;
-    line-height: 1.76;
+    line-height: 30px;
   }
 
   .modal-order__sizes {
