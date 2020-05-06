@@ -16,6 +16,7 @@
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-main__header {
     background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: auto 132%;
   }
 }
 
@@ -64,6 +65,7 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-main__header {
       background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: auto 119%;
     }
   }
 
@@ -100,6 +102,7 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-main__header {
       background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: auto 119%;
     }
   }
 

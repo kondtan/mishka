@@ -124,6 +124,7 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .feedback {
       background-image: url("../img/review@2x.jpg");
+      background-size: auto 100%;
     }
   }
 
