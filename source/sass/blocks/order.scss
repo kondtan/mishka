@@ -1,9 +1,12 @@
 .order {
   margin: 0 30px;
+  margin-right: 15px;
 }
 
 .order__text {
-  margin: 0;
+  max-width: 260px;
+
+  margin: 0 auto;
   margin-bottom: 21px;
 
   font-size: 13px;
@@ -16,7 +19,10 @@
   }
 
   .order__text {
+    max-width: 660px;
+
     padding: 0 50px;
+    margin: 0 auto;
     margin-bottom: 20px;
 
     font-size: 17px;
@@ -26,6 +32,8 @@
 
 @media (min-width: $desktop-width) {
   .order__text {
+    max-width: 685px;
+
     padding: 0 225px;
   }
 }

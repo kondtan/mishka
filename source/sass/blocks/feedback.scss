@@ -121,6 +121,14 @@
     }
   }
 
+  @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .feedback {
+      background-image: url("../img/review@2x.jpg");
+    }
+  }
+
   .feedback-review {
     display: flex;
     flex-wrap: wrap;

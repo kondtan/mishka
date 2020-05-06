@@ -4,13 +4,13 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .copyright {
   min-height: 34px;
 
-  padding: 14px 67px;
+  margin: 14px auto;
 }
 
 .copyright__link {
@@ -39,12 +39,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .copyright {
-    width: 200px;
-
-    padding: 0;
-  }
-
   .copyright__link {
     min-width: 185px;
     min-height: 20px;
@@ -56,6 +50,7 @@
     width: 185px;
 
     padding-top: 6px;
+    margin: 0;
   }
 
   .copyright__logo {
