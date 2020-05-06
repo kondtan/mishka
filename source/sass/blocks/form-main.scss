@@ -1,5 +1,6 @@
 .form-main__wrapper {
-  width: 100%;
+  width: $mobile-width;
+
   padding: 72px 0 75px;
   margin-bottom: 22px;
 
@@ -22,6 +23,8 @@
   }
 
   .form-main__wrapper {
+    width: $tablet-width;
+
     position: relative;
 
     padding: 94px 0 90px;
@@ -50,6 +53,8 @@
 
 @media (min-width: $desktop-width) {
   .form-main__wrapper {
+    width: 1150px;
+
     padding-bottom: 119px;
     margin-bottom: 106px;
 
