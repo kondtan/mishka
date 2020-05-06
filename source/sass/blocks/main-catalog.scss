@@ -1,0 +1,21 @@
+.main-catalog {
+  margin-top: auto;
+}
+
+.main-catalog__list {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-catalog {
+    width: 100%;
+
+    background-color: $main-bg-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog {
+    margin-bottom: 123px;
+  }
+}

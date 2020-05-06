@@ -1,0 +1,37 @@
+.catalog {
+  padding: 0 30px;
+}
+
+.catalog__list {
+  @include list-reset;
+}
+
+.catalog__item {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding: 0 50px 0 51px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding: 0 51px 0 49px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    margin-right: 51px;
+  }
+
+  .catalog__item:nth-child(3n) {
+    margin-right: 0;
+  }
+}

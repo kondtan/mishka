@@ -1,0 +1,167 @@
+.production__wrapper {
+  max-width: 360px;
+
+  margin: 0 30px;
+  margin-bottom: 56px;
+}
+
+.production__header {
+  border: solid 1px $lightest-gray;
+  border-bottom: none;
+}
+
+.production__title {
+  position: relative;
+
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 89px;
+
+  font-size: 17px;
+  line-height: 24px;
+
+  // border: solid 1px $lightest-gray;
+  // border-bottom: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    top: 30px;
+    left: 33px;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.production__info {
+  margin: 0;
+  padding: 27px 35px 34px 34px;
+
+  font-size: 13px;
+  line-height: 24px;
+
+  border: solid 1px $lightest-gray;
+  border-top: none;
+}
+
+.production__text {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.production__link {
+  padding: 13px 15px;
+  font-size: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .production {
+    padding: 0 50px 0 51px;
+  }
+
+  .production__wrapper {
+    width: 668px;
+    max-width: none;
+
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .production__video {
+    order: -1;
+  }
+
+  .production__title {
+    padding-top: 37px;
+    padding-left: 105px;
+    padding-right: 30px;
+
+    font-size: 20px;
+
+    &::after {
+      top: 32px;
+      left: 41px;
+    }
+  }
+
+  .production__info {
+    padding-left: 39px;
+    padding-right: 42px;
+    padding-top: 8px;
+    padding-bottom: 44px;
+
+    border: solid 1px $lightest-gray;
+    border-top: none;
+  }
+
+  .production__text {
+    margin-bottom: 34px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production {
+    margin-bottom: 105px;
+  }
+
+  .production__wrapper {
+    position: relative;
+
+    width: auto;
+  }
+
+  .production__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .production__header,
+  .production__info {
+    margin-left: 682px;
+
+    padding: 0;
+    padding-right: 58px;
+    padding-bottom: 33px;
+    padding-left: 78px;
+
+    border-left: none;
+  }
+
+  .production__title {
+    max-width: 232px;
+
+    padding: 0;
+    padding-top: 94px;
+
+    &::after {
+      top: 40px;
+      left: 3px;
+    }
+  }
+
+  .production__text {
+    width: 224px;
+    margin-bottom: 45px;
+  }
+
+  .production__link {
+    width: 230px;
+  }
+
+  .production__info {
+    padding-bottom: 58px;
+  }
+}

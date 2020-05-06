@@ -1,0 +1,56 @@
+.video__wrapper {
+  position: relative;
+}
+
+.video__image {
+  width: 100%;
+  display: block;
+}
+
+.video__button {
+  @include button-reset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  margin: auto;
+
+  width: 101px;
+  height: 77px;
+
+  background-color: transparent;
+  background-image: url("../img/svg/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+
+    transition: 0.4s;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    transform: scale(0.8);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video,
+  .video__image {
+    width: 668px;
+    height: 455px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video,
+  .video__image {
+    width: 682px;
+    height: 455px;
+  }
+}

@@ -47,6 +47,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "posthtml-include": "^1.4.0",
-    "readable-stream": "^3.6.0"
+    "readable-stream": "^3.6.0",
+    "scss-resets": "^0.5.2"
   }
 }

@@ -1,0 +1,172 @@
+.catalog-item {
+  &:hover .catalog-item__info {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active .catalog-item__info {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.catalog-item__title {
+  margin: 0;
+}
+
+.catalog-item__link {
+  display: block;
+
+  font-size: 17px;
+  font-weight: $bold;
+  line-height: 24px;
+  color: #000000;
+
+  &--image {
+    font-size: 0;
+    line-height: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: rgba(#000000, 0.6);
+  }
+
+  &:active {
+    color: rgba(#000000, 0.3);
+  }
+}
+
+.catalog-item__image {
+  width: 260px;
+  height: 195px;
+}
+
+.catalog-item__info {
+  padding: 26px 28px;
+  padding-bottom: 27px;
+
+  border: solid 1px $lightest-gray;
+}
+
+.catalog-item__value {
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 19px;
+
+  font-size: 13px;
+  line-height: 30px;
+  color: $primary-gray;
+}
+
+.catalog-item__order {
+  padding-top: 21px;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-top: solid 1px $lightest-gray;
+}
+
+.catalog-item__price {
+  margin: 0;
+
+  font-size: 15px;
+  font-weight: $bold;
+  line-height: 24px;
+}
+
+.catalog-item__icon {
+  opacity: 0.2;
+}
+
+.catalog-item__button {
+  @include button-reset;
+
+  &:hover .catalog-item__icon,
+  &:focus .catalog-item__icon {
+    fill: $seafoam-blue;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: $seafoam-blue;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    width: 100%;
+    margin-bottom: 54px;
+
+    display: flex;
+  }
+
+  .catalog-item__link {
+    font-size: 20px;
+  }
+
+  .catalog-item__image {
+    min-width: 334px;
+    height: 334px;
+  }
+
+  .catalog-item__info {
+    width: 100%;
+
+    padding-top: 25px;
+    padding-left: 25px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-item__value {
+    margin-bottom: auto;
+
+    font-size: 15px;
+  }
+
+  .catalog-item__order {
+    padding-right: 4px;
+    padding-left: 5px;
+  }
+
+  .catalog-item__price {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-item {
+    width: 316px;
+    margin-bottom: 57px;
+
+    flex-direction: column;
+  }
+
+  .catalog-item__link {
+    &--image {
+      width: 316px;
+      height: 462px;
+    }
+  }
+
+  .catalog-item__image {
+    min-width: 316px;
+    width: 316;
+    height: 462px;
+  }
+
+  .catalog-item__info {
+    max-width: 261px;
+    flex-grow: 1;
+  }
+
+  .catalog-item__value {
+    padding-bottom: 15px;
+  }
+
+  .catalog-item__order {
+    padding-left: 2px;
+  }
+}

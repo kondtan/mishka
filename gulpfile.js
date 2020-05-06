@@ -93,6 +93,7 @@ gulp.task("copy", function () {
     "source/img/**/logo*.svg",
     "source/img/**/icon-tick.svg",
     "source/img/**/icon-flag.svg",
+    "source/img/**/icon-video.svg",
     "source/js/**",
     "source/*.ico"
   ], {

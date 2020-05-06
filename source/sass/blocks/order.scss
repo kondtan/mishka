@@ -1,0 +1,31 @@
+.order {
+  margin: 0 30px;
+}
+
+.order__text {
+  margin: 0;
+  margin-bottom: 21px;
+
+  font-size: 13px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .order {
+    margin: 0;
+  }
+
+  .order__text {
+    padding: 0 50px;
+    margin-bottom: 20px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__text {
+    padding: 0 225px;
+  }
+}

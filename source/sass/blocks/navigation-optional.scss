@@ -1,0 +1,31 @@
+@media (min-width: $desktop-width) {
+  .navigation-optional {
+    min-height: 60px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    font-size: 15px;
+  }
+
+  .navigation-optional__item {
+    margin-right: 59px;
+  }
+
+  .navigation-optional__link {
+    color: #000000;
+    line-height: 24px;
+
+    opacity: 1;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

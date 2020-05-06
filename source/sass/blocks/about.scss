@@ -1,0 +1,182 @@
+.about {
+  margin: 0 30px;
+  margin-bottom: 50px;
+}
+
+.about__header {
+  margin: 0;
+
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.about__list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about__list-item {
+  height: auto;
+
+  margin-top: 38px;
+  display: flex;
+  flex-wrap: wrap;
+
+  font-size: 17px;
+  font-weight: $bold;
+  line-height: 20px;
+  color: #000000;
+}
+
+.about-item__svg {
+  margin-bottom: 16px;
+  // padding-left: 8px;
+
+  // position: sticky;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    padding: 0;
+    margin: 0 50px;
+    margin-bottom: 50px;
+  }
+
+  .about__header {
+    margin-bottom: 20px;
+    margin-left: -5px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__list {
+    flex-direction: row;
+  }
+
+  .about__list-item {
+    width: 50%;
+
+    margin-top: 29px;
+    margin-bottom: 33px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+
+    &__svg {
+      // position: relative;
+      margin-bottom: 16px;
+
+      fill: #63d1bb;
+    }
+
+    span {
+      display: block;
+    }
+
+    &--eco {
+      width: 50%;
+      order: -2;
+
+      span {
+        width: 205px;
+      }
+
+      .about-item__svg {
+        left: 4px;
+      }
+    }
+
+    &--style {
+      width: 50%;
+      margin-top: 30px;
+      margin-bottom: 37px;
+
+      span {
+        width: 240px;
+      }
+
+      .about-item__svg {
+        top: -10px;
+        left: -7px;
+        margin-bottom: 22px;
+      }
+    }
+
+    &--likes {
+      width: 50%;
+      order: 1;
+
+      span {
+        width: 215px;
+      }
+
+      .about-item__svg {
+        top: -3px;
+        left: 1px;
+      }
+    }
+
+    &--handmade {
+      width: 49%;
+      margin-top: 33px;
+      order: -1;
+
+      span {
+        width: 255px;
+      }
+
+      .about-item__svg {
+        left: -4px;
+      }
+    }
+
+    &--support {
+      width: 49%;
+
+      span {
+        width: 300px;
+      }
+
+      .about-item__svg {
+        left: -14px;
+        margin-bottom: 26px;
+      }
+    }
+
+    &--gift {
+      width: 49%;
+      margin-top: 20px;
+      order: 2;
+
+      span {
+        width: 233px;
+      }
+
+      .about-item__svg {
+        top: -5px;
+        left: -5px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    margin: 0 226px;
+    margin-bottom: 58px;
+  }
+
+  .about__header {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

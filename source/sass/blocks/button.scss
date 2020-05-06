@@ -1,0 +1,27 @@
+.button {
+  padding: 13px 30px;
+  display: block;
+  box-sizing: border-box;
+
+  border: 2px solid $primary-gray;
+  background-color: #ffffff;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: $bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $primary-gray;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $primary-gray;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

@@ -1,0 +1,19 @@
+.leave-feedback {
+  font-size: 18px;
+  margin: 0 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .leave-feedback {
+    min-width: 175px;
+    margin: 0;
+
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .leave-feedback {
+    margin-top: 7px;
+  }
+}

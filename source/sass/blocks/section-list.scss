@@ -1,0 +1,153 @@
+.section-list {
+  list-style: none;
+  padding: 0;
+
+  text-align: left;
+}
+
+.section-list__item {
+  min-height: 62px;
+
+  padding: 23px 28px 18px 28px;
+
+  display: flex;
+  justify-content: center;
+
+  &--left {
+    background-color: $seafoam-blue;
+
+    &:hover,
+    &:focus {
+      background-color: $green-on-action;
+    }
+
+    &:active a {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--right {
+    padding-top: 20px;
+    padding-bottom: 21px;
+
+    background-color: $greeny-blue;
+
+    &:hover,
+    &:focus {
+      background-color: $dark-seafoam;
+    }
+
+    &:active a {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.section-list__icon {
+  fill: #149080;
+  opacity: 0.5;
+}
+
+.section-list__item:hover .section-list__icon,
+.section-list__link:focus .section-list__icon {
+  opacity: 0.7;
+}
+
+.section-list__item:active .section-list__icon {
+  opacity: 0.3;
+}
+
+.section-list__item:active .section-list__text {
+  opacity: 0.3;
+}
+
+.section-list__left {
+  background-color: $seafoam-blue;
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+}
+
+.section-list__right {
+  background-color: #56c3b2;
+
+  &:hover {
+    background-color: #46c1ae;
+  }
+}
+
+.interior-icon {
+  width: 40px;
+  height: 62px;
+  padding: 0 9px 0 0;
+
+  align-self: center;
+  opacity: 0.5;
+}
+
+.toys-icon {
+  width: 60px;
+  height: 60px;
+
+  align-self: center;
+  opacity: 0.5;
+}
+
+.section-list__link {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 19px;
+  font-weight: $bold;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.section-list__text {
+  width: 111px;
+  padding-bottom: 6px;
+
+  // display: inline-flex;
+}
+
+@media (min-width: $tablet-width) {
+  .section-list {
+    width: 668px;
+
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .section-list__item {
+    width: 50%;
+    min-height: 119px;
+
+    padding: 0 35px;
+  }
+
+  .section-list__item:hover {
+    min-height: 124px;
+    margin-top: -5px;
+    transform-origin: center bottom;
+  }
+
+  .section-list__text {
+    padding: 0;
+    line-height: 29px;
+  }
+
+  .interior-icon {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .section-list {
+    width: 1050px;
+  }
+}
