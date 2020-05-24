@@ -16,7 +16,7 @@ script: 
 deploy:  
   provider: pages  
   skip_cleanup: true  
-  github-token: $travis-mishka
+  github-token: travis-mishka
   local_dir: build  
   on:    
     branch: master
