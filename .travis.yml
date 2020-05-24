@@ -6,12 +6,17 @@ node_js:
 notifications:
   email: false
 
-language: node_jsnode_js:  - "stable"notifications:  email: false
-cache:  directories:  - node_modules
-script:  npm run build
-deploy:  provider: pages  
-skip_cleanup: true  
-github-token: $htmlacademy-mishka-19  
-local_dir: build  
-on:    
-branch: master
+cache:
+  directories:  
+  - node_modules
+
+script: 
+  npm run build
+
+deploy:  
+  provider: pages  
+  skip_cleanup: true  
+  github-token: $travis-mishka
+  local_dir: build  
+  on:    
+    branch: master
